@@ -1,11 +1,12 @@
 import React from "react";
 import Modal from "react-modal";
 
-class SignUpModal extends React.Component {
+class SignInModal extends React.Component {
   constructor(props) {
     super(props)
   }
   render() {
+    console.log(this.props.isOpen);
     return (
       <Modal
         className="sign-up-modal"
@@ -27,4 +28,4 @@ class SignUpModal extends React.Component {
   
 }
 
-export default SignUpModal;
+export default SignInModal;
