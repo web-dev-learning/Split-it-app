@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import PropTypes from "prop-types";
 
 class SignInModal extends React.Component {
 	constructor(props) {
@@ -26,5 +27,10 @@ class SignInModal extends React.Component {
 		);
 	}
 }
+
+SignInModal.propTypes = {
+	openModal: PropTypes.bool,
+	closeModal: PropTypes.bool
+};
 
 export default SignInModal;
