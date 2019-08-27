@@ -23,7 +23,7 @@ class SignUpModal extends React.Component {
 				</form>
 
 				<p>
-					Already a member? <a href="#">Sign in here</a>
+					Already a member? <button onClick={this.props.swapModal}>Sign in here</button>
 				</p>
 			</Modal>
 		);
@@ -32,7 +32,7 @@ class SignUpModal extends React.Component {
 
 SignUpModal.propTypes = {
 	openModal: PropTypes.bool,
-	closeModal: PropTypes.bool
+	closeModal: PropTypes.func
 };
 
 export default SignUpModal;
